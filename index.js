@@ -60,11 +60,11 @@ class compteEpargne {
         return (d1.getTime()-d2.getTime())/(1000*3600 * 24);
     }
 }
-//louam lemjid II1
+//louam lemjid II-1-A
 var list=new tableaux();
 document.getElementsByTagName("button")[0].addEventListener("click",function Add(){
     const inp=document.getElementById('operation').value;
-    if(Number(inp)<0 && Number(inp)-list.solde<0){document.getElementsByTagName("span")[0].style.opacity=1}
+    if(Number(inp)+list.solde<0){document.getElementsByTagName("span")[0].style.opacity=1}
     else{
         document.getElementsByTagName("span")[0].style.opacity=0
         const taux=document.getElementById('taux').value;
